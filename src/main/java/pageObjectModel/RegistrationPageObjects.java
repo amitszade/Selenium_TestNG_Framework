@@ -18,7 +18,7 @@ public class RegistrationPageObjects {
 	private By PrivacyPolicyCheckBox = By.xpath("//input[@name='agree']");	
 	private By ContinueButton = By.xpath("//input[@type='submit']");
 	
-	private By RegistrationSucceessMessage = By.xpath("//h1[contains(text(),'Your Account Has Been Created!')]");
+	//private By RegistrationSucceessMessage = By.xpath("//h1[contains(text(),'Your Account Has Been Created!')]");
 	
 	private By ExistingEmailWarning = By.xpath("//div[contains(text(),' Warning: E-Mail Address is already registered!')]");
 	
@@ -84,10 +84,10 @@ public class RegistrationPageObjects {
 		return driver.findElement(ContinueButton);
 	}
 	
-	public WebElement RegistrationSucceessMessage()
-	{
-		return driver.findElement(RegistrationSucceessMessage);
-	}
+	/*
+	 * public WebElement RegistrationSucceessMessage() { return
+	 * driver.findElement(RegistrationSucceessMessage); }
+	 */
 	
 	public WebElement ExtEmail_Warning()
 	{
