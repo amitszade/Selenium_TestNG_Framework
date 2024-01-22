@@ -24,6 +24,8 @@ public class LoginTestCases extends BaseClass {
 		
 		lpo.ClickOnLoginButton().click();
 		
+		commonMethods.PutExpliciteWaits(driver, 4, lpo.InvalidLoginErrorMsg());
+		
 		commonMethods.handleAssertion(lpo.InvalidLoginErrorMsg().getText(), constants.InvalidCredErrorMsg);
 	}
 	
