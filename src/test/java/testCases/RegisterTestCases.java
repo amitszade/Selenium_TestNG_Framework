@@ -48,7 +48,7 @@ public class RegisterTestCases extends BaseClass {
 		
 		commonMethods.handleAssertion(driver.getCurrentUrl(), constants.SuccessUrl);
 		
-		System.out.println("Registration Successful Messsage: "+rpo.RegistrationSucceessMessage().getText());
+		//System.out.println("Registration Successful Messsage: "+rpo.RegistrationSucceessMessage().getText());
 		
 	}
 

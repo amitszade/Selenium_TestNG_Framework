@@ -16,7 +16,7 @@ public class LoginPageObjects {
 	private By Password = By.xpath("//input[@name='password']");	
 	private By Login = By.xpath("//input[@value='Login']");
 	
-	private By LoginSucceessMessage = By.xpath("//h2[contains(text(),'My Account')]");
+	//private By LoginSucceessMessage = By.xpath("//h2[contains(text(),'My Account')]");
 	
 	private By InvalidLoginErrorMessage = By.xpath("//div[contains(text(),' Warning: No match for E-Mail Address and/or Password.')]");
 	
@@ -35,10 +35,10 @@ public class LoginPageObjects {
 		return driver.findElement(Login);
 	}
 	
-	public WebElement LoginSucceessMessage()
-	{
-		return driver.findElement(LoginSucceessMessage);
-	}
+	/*
+	 * public WebElement LoginSucceessMessage() { return
+	 * driver.findElement(LoginSucceessMessage); }
+	 */
 	
 	public WebElement InvalidLoginErrorMsg()
 	{

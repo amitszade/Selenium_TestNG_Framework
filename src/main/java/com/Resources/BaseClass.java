@@ -13,8 +13,7 @@ import org.testng.annotations.BeforeClass;
 public class BaseClass {
 
 	public WebDriver driver;
-    public Properties prop;
-    
+    public Properties prop;    
     
 	public void initializeDriver() throws IOException {
 

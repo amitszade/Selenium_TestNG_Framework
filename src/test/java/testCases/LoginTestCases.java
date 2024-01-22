@@ -66,6 +66,6 @@ public class LoginTestCases extends BaseClass {
 		
 		commonMethods.handleAssertion(driver.getCurrentUrl(), constants.LoginSuccessUrl);
 		
-		System.out.println("Login Successful Messsage: "+lpo.LoginSucceessMessage().getText());
+		//System.out.println("Login Successful Messsage: "+lpo.LoginSucceessMessage().getText());
 	}
 }
