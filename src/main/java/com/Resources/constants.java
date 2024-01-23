@@ -54,6 +54,7 @@ public class constants {
 	    public static String EmailAddr5 = "hgfghemail.com";
 	    public static String password5 = "Test@123";
 	    public static String InvalidCredErrorMsg = "Warning: No match for E-Mail Address and/or Password.";
+	    public static String LoginAttemptExceedsErrMsg = "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.";
 	    
 	    // Login With valid Data
 	    public static String password6 = "Test@123";
