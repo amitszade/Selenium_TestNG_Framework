@@ -1,5 +1,6 @@
 package testCases;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.testng.annotations.Test;
@@ -14,7 +15,7 @@ import pageObjectModel.LoginPageObjects;
 public class LoginTestCases extends BaseClass {
 
 	@Test(priority = 1)
-	public void VerifyLoginwithInvalidData() throws InterruptedException {
+	public void VerifyLoginwithInvalidData() throws InterruptedException, IOException {
 		LoginPageObjects lpo = new LoginPageObjects(driver);
 
 		lpo.EnterEmailAddr().clear();
@@ -29,17 +30,19 @@ public class LoginTestCases extends BaseClass {
 		
 		 try 
 		 { 			
-		    commonMethods.handleAssertion(lpo.InvalidLoginError().getText(),constants.InvalidCredErrorMsg); 
+		    commonMethods.handleAssertionString(lpo.InvalidLoginError().getText(),constants.InvalidCredErrorMsg); 
 		 } 
 		 
 		 catch (Exception e) 
 		 {
-		    commonMethods.handleAssertion(lpo.LoginAttemptsExcceds().getText(),constants.LoginAttemptExceedsErrMsg);
+		    commonMethods.handleAssertionString(lpo.LoginAttemptsExcceds().getText(),constants.LoginAttemptExceedsErrMsg);
 		 }
+		 
+		
 	}
 		 
 	@Test(priority = 0)
-	public void LoginWith_NonRegisteredData() throws InterruptedException {
+	public void LoginWith_NonRegisteredData() throws InterruptedException, IOException {
 		HomePageObjects hpo = new HomePageObjects(driver);
 
 		commonMethods.PutExpliciteWaits(driver, 4, hpo.ClickonMyAccount());
@@ -56,12 +59,14 @@ public class LoginTestCases extends BaseClass {
 
 		lpo.ClickOnLoginButton().click();
 
-		commonMethods.handleAssertion(driver.getCurrentUrl(), constants.Non_RegisteredEmailUrl);
+		commonMethods.handleAssertionString(driver.getCurrentUrl(), constants.Non_RegisteredEmailUrl);
 		Thread.sleep(4000);
+		
+		
 	}
 
 	@Test(priority = 2)
-	public void LoginWithValidData() {
+	public void LoginWithValidData() throws IOException {
 		LoginPageObjects lpo = new LoginPageObjects(driver);
 
 		commonMethods.PutExpliciteWaits(driver, 4, lpo.EnterEmailAddr());
@@ -74,7 +79,8 @@ public class LoginTestCases extends BaseClass {
 
 		lpo.ClickOnLoginButton().click();
 
-		commonMethods.handleAssertion(driver.getCurrentUrl(), constants.LoginSuccessUrl);
+		commonMethods.handleAssertionString(driver.getCurrentUrl(), constants.LoginSuccessUrl);
+		
 
 		// System.out.println("Login Successful Messsage:
 		// "+lpo.LoginSucceessMessage().getText());

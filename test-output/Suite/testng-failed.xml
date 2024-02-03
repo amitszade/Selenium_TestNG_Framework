@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.Resources.Listener"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.LoginTestCases">
+      <class name="testCases.CurrencyDDTestCases">
         <methods>
-          <include name="VerifyLoginwithInvalidData"/>
+          <include name="verifyPoundSterlingOptionCurrencyDropDownMenu"/>
+          <include name="endReport"/>
+          <include name="ExtentReport"/>
+          <include name="verifyUSDollerOptionCurrencyDropDownMenu"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- testCases.LoginTestCases -->
+      </class> <!-- testCases.CurrencyDDTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -10,15 +10,29 @@ import org.testng.asserts.SoftAssert;
 
 public class commonMethods {
 	
-	public static void handleAssertion(String ActualResult, String ExpectedResult)
+	public static WebDriver driver;
+	public static String ActualResult;
+	public static String ExpectedResult;
+	
+	public static void handleAssertionString(String respCode, String ExpectedResult)
 	{
 		SoftAssert sa = new SoftAssert();
 		
-	    sa.assertEquals(ActualResult, ExpectedResult);
+	    sa.assertEquals(respCode, ExpectedResult);
 		
 		sa.assertAll();
 	}
 	
+	public static void handleAssertionInt(int respCode, int ExpectedResult)
+	{
+		SoftAssert sa = new SoftAssert();
+		
+	    sa.assertEquals(respCode, ExpectedResult);
+		
+		sa.assertAll();
+	}
+	
+		
 	public static void PutExpliciteWaits(WebDriver driver, int sec, WebElement element)
 	{
 		

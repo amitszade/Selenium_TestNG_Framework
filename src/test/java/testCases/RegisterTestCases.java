@@ -46,7 +46,7 @@ public class RegisterTestCases extends BaseClass {
 
 		rpo.ClickonContinueButton().click();
 		
-		commonMethods.handleAssertion(driver.getCurrentUrl(), constants.SuccessUrl);
+		commonMethods.handleAssertionString(driver.getCurrentUrl(), constants.SuccessUrl);
 		
 		//System.out.println("Registration Successful Messsage: "+rpo.RegistrationSucceessMessage().getText());
 		
@@ -83,7 +83,7 @@ public class RegisterTestCases extends BaseClass {
 
 		rpo.ClickonContinueButton().click();
 		
-		commonMethods.handleAssertion(driver.getCurrentUrl(), constants.InvalidUrl);
+		commonMethods.handleAssertionString(driver.getCurrentUrl(), constants.InvalidUrl);
 
 	}
 
@@ -116,13 +116,13 @@ public class RegisterTestCases extends BaseClass {
 
 		rpo.ClickonContinueButton().click();
 		
-		commonMethods.handleAssertion(rpo.FirstN_ErrMsg().getText(), constants.FirstNameErrorMsg);
-		commonMethods.handleAssertion(rpo.LastN_ErrMsg().getText(), constants.LastNameErrorMsg);
-		commonMethods.handleAssertion(rpo.Email_ErrMsg().getText(), constants.EmailErrorMsg);
-		commonMethods.handleAssertion(rpo.TPhone_ErrMsg().getText(), constants.TelephoneErrorMsg);
-		commonMethods.handleAssertion(rpo.PW_ErrMsg().getText(), constants.PasswordErrorMsg);
-		commonMethods.handleAssertion(rpo.CnfPW_ErrMsg().getText(), constants.CnfPasswordErrorMsg);
-		commonMethods.handleAssertion(rpo.PrivacyP_ErrMsg().getText(), constants.PrivacyPolicyErrorMsg);
+		commonMethods.handleAssertionString(rpo.FirstN_ErrMsg().getText(), constants.FirstNameErrorMsg);
+		commonMethods.handleAssertionString(rpo.LastN_ErrMsg().getText(), constants.LastNameErrorMsg);
+		commonMethods.handleAssertionString(rpo.Email_ErrMsg().getText(), constants.EmailErrorMsg);
+		commonMethods.handleAssertionString(rpo.TPhone_ErrMsg().getText(), constants.TelephoneErrorMsg);
+		commonMethods.handleAssertionString(rpo.PW_ErrMsg().getText(), constants.PasswordErrorMsg);
+		commonMethods.handleAssertionString(rpo.CnfPW_ErrMsg().getText(), constants.CnfPasswordErrorMsg);
+		commonMethods.handleAssertionString(rpo.PrivacyP_ErrMsg().getText(), constants.PrivacyPolicyErrorMsg);
 		
 	}
 
@@ -150,7 +150,7 @@ public class RegisterTestCases extends BaseClass {
 		
 		rpo.ClickonContinueButton().click();
 		
-		commonMethods.handleAssertion(rpo.ExtEmail_Warning().getText(), constants.EmailExistWaring);
+		commonMethods.handleAssertionString(rpo.ExtEmail_Warning().getText(), constants.EmailExistWaring);
 
 	}
 

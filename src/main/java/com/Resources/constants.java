@@ -60,8 +60,14 @@ public class constants {
 	    public static String password6 = "Test@123";
 	    public static String LoginSuccessUrl = "https://naveenautomationlabs.com/opencart/index.php?route=account/account";
 	    
+	    // Currency Drop Down is Clickable
+	    public static String CurrencyEUROText = "€ Euro";
+	    public static String CurrencyGBPText = "£ Pound Sterling";
+	    public static String CurrencyUSDText = "$ US Dollar";
+	    
+	    // All Links on Home page
+	    public static int ResponseCode = 200;
 	    
 	    
-	    
-	
+  
 }
