@@ -66,7 +66,11 @@ public class constants {
 	    public static String CurrencyUSDText = "$ US Dollar";
 	    
 	    // All Links on Home page
-	    public static int ResponseCode = 200;
+	    public static String ResponseCode = "200";
+	    
+	    // Add To Cart and compare the total price of both product in the cart
+	    public static String iphoneUrl = "https://naveenautomationlabs.com/opencart/index.php?route=product/search&search=iphone";
+	    public static String SamsungUrl = "https://naveenautomationlabs.com/opencart/index.php?route=product/search&search=samsung";
 	    
 	    
   

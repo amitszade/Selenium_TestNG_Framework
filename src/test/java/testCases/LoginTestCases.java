@@ -30,12 +30,12 @@ public class LoginTestCases extends BaseClass {
 		
 		 try 
 		 { 			
-		    commonMethods.handleAssertionString(lpo.InvalidLoginError().getText(),constants.InvalidCredErrorMsg); 
+		    commonMethods.handleAssertion(lpo.InvalidLoginError().getText(),constants.InvalidCredErrorMsg); 
 		 } 
 		 
 		 catch (Exception e) 
 		 {
-		    commonMethods.handleAssertionString(lpo.LoginAttemptsExcceds().getText(),constants.LoginAttemptExceedsErrMsg);
+		    commonMethods.handleAssertion(lpo.LoginAttemptsExcceds().getText(),constants.LoginAttemptExceedsErrMsg);
 		 }
 		 
 		
@@ -59,7 +59,7 @@ public class LoginTestCases extends BaseClass {
 
 		lpo.ClickOnLoginButton().click();
 
-		commonMethods.handleAssertionString(driver.getCurrentUrl(), constants.Non_RegisteredEmailUrl);
+		commonMethods.handleAssertion(driver.getCurrentUrl(), constants.Non_RegisteredEmailUrl);
 		Thread.sleep(4000);
 		
 		
@@ -79,7 +79,7 @@ public class LoginTestCases extends BaseClass {
 
 		lpo.ClickOnLoginButton().click();
 
-		commonMethods.handleAssertionString(driver.getCurrentUrl(), constants.LoginSuccessUrl);
+		commonMethods.handleAssertion(driver.getCurrentUrl(), constants.LoginSuccessUrl);
 		
 
 		// System.out.println("Login Successful Messsage:

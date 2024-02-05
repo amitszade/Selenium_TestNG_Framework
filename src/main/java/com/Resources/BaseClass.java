@@ -132,9 +132,9 @@ public class BaseClass {
 	// -- Capture the price of Samsung Galaxy Tab and store it in a variable -- 
     // SamsungPrice = $241.99 + Ex Tax: $199.99 = 441.98
 	// -- Click on Add to Cart
-	// -- Add the two product captured price and store it in a variable -- TwoProduct
-	// -- Click on Cart
+	// -- Add the two product's captured price and store it in a variable -- TwoProduct
+	// -- Click on Cart -- 
 	// -- Capture the Total price from cart section and Store it in a variable -- 
-	// -- Compare the Total price in Cart and TwoProduct value
-    // Verify the same product to be returned
+	// -- Compare the Total price in Cart and TwoProduct value -- 
+    // Verify the same product to be returned -- 
 	 

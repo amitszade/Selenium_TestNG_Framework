@@ -29,8 +29,9 @@ public class HomePageLinksTestCases extends BaseClass {
 			  conn.setRequestMethod("HEAD"); // This will give status code and not the response body
 			  conn.connect();
 			  int respCode = conn.getResponseCode();
+			  String RCode = Integer.toString(respCode);
 			  
-			  commonMethods.handleAssertionInt(respCode, constants.ResponseCode);			  
-		  }		
+			  commonMethods.handleAssertion(RCode, constants.ResponseCode);			  
+		  }	
 	}
 }

@@ -18,7 +18,7 @@ public class CurrencyMenuTestCases extends BaseClass{
 		
 		hpo.CurrencyMenu().click();
 		
-		commonMethods.handleAssertionString(hpo.CurrencyEuro().getText(), constants.CurrencyEUROText);
+		commonMethods.handleAssertion(hpo.CurrencyEuro().getText(), constants.CurrencyEUROText);
 	}
 	
 	@Test
@@ -26,7 +26,7 @@ public class CurrencyMenuTestCases extends BaseClass{
 	{
 		HomePageObjects hpo = new HomePageObjects(driver);
 		
-		commonMethods.handleAssertionString(hpo.CurrencyPoundSterling().getText(), constants.CurrencyGBPText);
+		commonMethods.handleAssertion(hpo.CurrencyPoundSterling().getText(), constants.CurrencyGBPText);
 	}
 	
 	@Test
@@ -34,6 +34,6 @@ public class CurrencyMenuTestCases extends BaseClass{
 	{
 		HomePageObjects hpo = new HomePageObjects(driver);
 		
-		commonMethods.handleAssertionString(hpo.CurrencyUSDoller().getText(), constants.CurrencyUSDText);
+		commonMethods.handleAssertion(hpo.CurrencyUSDoller().getText(), constants.CurrencyUSDText);
 	}
 }
