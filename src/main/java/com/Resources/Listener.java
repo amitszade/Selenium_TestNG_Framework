@@ -1,8 +1,6 @@
 package com.Resources;
-
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import com.aventstack.extentreports.Status;
 
 public class Listener extends extentManager implements ITestListener {

@@ -14,21 +14,19 @@ public class commonMethods {
 	public static String ActualResult;
 	public static String ExpectedResult;
 	
-	public static void handleAssertion(String respCode, String ExpectedResult)
+	public static void handleAssertion(String ActualResult, String ExpectedResult)
 	{
 		SoftAssert sa = new SoftAssert();
 		
-	    sa.assertEquals(respCode, ExpectedResult);
-		
+	    sa.assertEquals(ActualResult, ExpectedResult);
 		sa.assertAll();
 	}
 	
 		
-	public static void PutExpliciteWaits(WebDriver driver, int sec, WebElement element)
-	{
-		
+	public static void PutExpliciteWaits(WebDriver driver, int sec, WebElement webElement)
+	{		
 		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(sec));
-		wait.until(ExpectedConditions.elementToBeClickable(element));		
+		wait.until(ExpectedConditions.elementToBeClickable(webElement));		
 	}
 	
 	public static String RandomEmailGenerator()

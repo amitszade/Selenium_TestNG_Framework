@@ -69,9 +69,16 @@ public class constants {
 	    public static String ResponseCode = "200";
 	    
 	    // Add To Cart and compare the total price of both product in the cart
+	    public static String Searchiphone = "iphone";
+	    public static String SearchSamsung = "samsung";
+	    public static String SearchBox = "Search";
 	    public static String iphoneUrl = "https://naveenautomationlabs.com/opencart/index.php?route=product/search&search=iphone";
+	    public static String iphoneAddedIntoCart = "iPhone";
+	    public static String SamsungAddedIntoCart = "Samsung Galaxy Tab 10.1";
 	    public static String SamsungUrl = "https://naveenautomationlabs.com/opencart/index.php?route=product/search&search=samsung";
-	    
-	    
-  
+	    public static String iphoneInCart = "Success: You have added";
+	    public static String iphonePrice = "123.20";
+	    public static String SamsungPrice = "241.99";
+	    public static String TotalCartValue = "$365.19";
+ 
 }

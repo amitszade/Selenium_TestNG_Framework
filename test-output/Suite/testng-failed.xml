@@ -6,15 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.CurrencyDDTestCases">
+      <class name="testCases.ProductAddtoCartTestCases">
         <methods>
-          <include name="verifyPoundSterlingOptionCurrencyDropDownMenu"/>
           <include name="endReport"/>
           <include name="ExtentReport"/>
-          <include name="verifyUSDollerOptionCurrencyDropDownMenu"/>
           <include name="launchBrowser"/>
+          <include name="verifyiphoneaddtocart"/>
         </methods>
-      </class> <!-- testCases.CurrencyDDTestCases -->
+      </class> <!-- testCases.ProductAddtoCartTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
