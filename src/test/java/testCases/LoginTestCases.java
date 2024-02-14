@@ -42,7 +42,7 @@ public class LoginTestCases extends BaseClass {
 	}
 		 
 	@Test(priority = 0)
-	public void LoginWith_NonRegisteredData() throws InterruptedException, IOException {
+	public void VerifyLoginWith_NonRegisteredData() throws InterruptedException, IOException {
 		HomePageObjects hpo = new HomePageObjects(driver);
 
 		commonMethods.PutExpliciteWaits(driver, 4, hpo.ClickonMyAccount());
@@ -66,7 +66,7 @@ public class LoginTestCases extends BaseClass {
 	}
 
 	@Test(priority = 2)
-	public void LoginWithValidData() throws IOException {
+	public void VerifyLoginWithValidData() throws IOException {
 		LoginPageObjects lpo = new LoginPageObjects(driver);
 
 		commonMethods.PutExpliciteWaits(driver, 4, lpo.EnterEmailAddr());

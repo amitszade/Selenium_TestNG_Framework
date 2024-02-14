@@ -16,14 +16,14 @@ public class ProductAddtoCartTestCases extends BaseClass {
 	Double SamsungPrice;
 
 	@Test(priority = 0)
-	public void verfiyProductPlaceholderofSerachbox() {
+	public void VerfiyProductPlaceholderofSerachbox() {
 		HomePageObjects hpo = new HomePageObjects(driver);
 
 		commonMethods.handleAssertion(hpo.ProductSearchBox().getAttribute("placeholder"), constants.SearchBox);
 	}
 
 	@Test(priority = 1)
-	public void verifysearchtheiphone() {
+	public void Verifysearchtheiphone() {
 		HomePageObjects hpo = new HomePageObjects(driver);
 
 		hpo.ProductSearchBox().click();
@@ -33,7 +33,7 @@ public class ProductAddtoCartTestCases extends BaseClass {
 	}
 
 	@Test(priority = 2)
-	public void verifythepriceofiphone() {
+	public void Verifythepriceofiphone() {
 		HomePageObjects hpo = new HomePageObjects(driver);
 
 		String pricea = hpo.iphonePrice().getText(); // Get the text using getText method
@@ -46,7 +46,7 @@ public class ProductAddtoCartTestCases extends BaseClass {
 	}
 
 	@Test(priority = 3)
-	public void verifyiphoneaddtocart() {
+	public void Verifyiphoneaddtocart() {
 		HomePageObjects hpo = new HomePageObjects(driver);
 
 		hpo.iphoneAddToCartButton().click();
@@ -56,7 +56,7 @@ public class ProductAddtoCartTestCases extends BaseClass {
 	}
 
 	@Test(priority = 4)
-	public void verifysearchtheSamsung() {
+	public void VerifysearchtheSamsung() {
 		HomePageObjects hpo = new HomePageObjects(driver);
 
 		hpo.ProductSearchBox().click();
@@ -67,7 +67,7 @@ public class ProductAddtoCartTestCases extends BaseClass {
 	}
 
 	@Test(priority = 5)
-	public void verifythepriceofSamsungTab() {
+	public void VerifythepriceofSamsungTab() {
 		HomePageObjects hpo = new HomePageObjects(driver);
 
 		String pricea = hpo.SamsungPrice().getText(); // Get the text using getText method
@@ -80,7 +80,7 @@ public class ProductAddtoCartTestCases extends BaseClass {
 	}
 
 	@Test(priority = 6)
-	public void verifySamsungTabaddtocart() 
+	public void VerifySamsungTabaddtocart() 
 	{		
 		HomePageObjects hpo = new HomePageObjects(driver);
 
@@ -90,7 +90,7 @@ public class ProductAddtoCartTestCases extends BaseClass {
 	}
 
 	@Test(priority = 7)
-	public void verifyTotalPriceinCart() 
+	public void VerifyTotalPriceinCart() 
 	{
         double TotalPriceWithout$ = iphonePrice + SamsungPrice;
         String TotalCartValue = "$" + Double.toString(TotalPriceWithout$);

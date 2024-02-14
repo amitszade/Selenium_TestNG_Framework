@@ -12,7 +12,7 @@ import pageObjectModel.HomePageObjects;
 public class CurrencyMenuTestCases extends BaseClass{
 	
 	@Test (priority=0)
-	public void verifyEuroOptionCurrencyDropDownMenu()
+	public void VerifyEuroOptionCurrencyDropDownMenu()
 	{
 		HomePageObjects hpo = new HomePageObjects(driver);
 		
@@ -22,7 +22,7 @@ public class CurrencyMenuTestCases extends BaseClass{
 	}
 	
 	@Test
-	public void verifyPoundSterlingOptionCurrencyDropDownMenu()
+	public void VerifyPoundSterlingOptionCurrencyDropDownMenu()
 	{
 		HomePageObjects hpo = new HomePageObjects(driver);
 		
@@ -30,7 +30,7 @@ public class CurrencyMenuTestCases extends BaseClass{
 	}
 	
 	@Test
-	public void verifyUSDollerOptionCurrencyDropDownMenu()
+	public void VerifyUSDollerOptionCurrencyDropDownMenu()
 	{
 		HomePageObjects hpo = new HomePageObjects(driver);
 		
