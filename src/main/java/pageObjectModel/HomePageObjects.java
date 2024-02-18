@@ -1,5 +1,7 @@
 package pageObjectModel;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,6 +23,8 @@ public class HomePageObjects {
 	private By CurrencyEuro = By.xpath("//button[@name='EUR']");
 	private By CurrencyGBP = By.xpath("//button[@name='GBP']");
 	private By CurrencyUSD = By.xpath("//button[@name='USD']");
+	
+	private By AllHomePageLinks = By.xpath("//ul[@class='list-unstyled']/li/a");
 	
 	private By SearchBox = By.xpath("//input[@name='search']");
 	private By SearchBoxButton = By.xpath("//span[@class='input-group-btn']");
@@ -66,6 +70,11 @@ public class HomePageObjects {
 	public WebElement CurrencyUSDoller()
 	{
 	    return driver.findElement(CurrencyUSD);	
+	}
+	
+	public List<WebElement> AllHomePageLinks()
+	{
+	    return driver.findElements(AllHomePageLinks);	
 	}
 	
 	public WebElement ProductSearchBox()

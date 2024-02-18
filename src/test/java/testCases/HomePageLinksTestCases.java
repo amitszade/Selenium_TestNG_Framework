@@ -4,9 +4,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
@@ -14,14 +12,16 @@ import com.Resources.BaseClass;
 import com.Resources.commonMethods;
 import com.Resources.constants;
 
+import pageObjectModel.HomePageObjects;
+
 public class HomePageLinksTestCases extends BaseClass {
 	
 	@Test
 	public void VerifyAlltheLinksonHomePage() throws MalformedURLException, IOException
 	{
-		List<WebElement> allLinks = driver.findElements(By.xpath("//ul[@class='list-unstyled']/li/a"));
-		
-		  for (WebElement link : allLinks)
+		HomePageObjects hpo = new HomePageObjects(driver);
+				
+		  for (WebElement link : hpo.AllHomePageLinks())
 		  {
 			  String url = link.getAttribute("href"); // This will give the value of all "href" attributes
 			  

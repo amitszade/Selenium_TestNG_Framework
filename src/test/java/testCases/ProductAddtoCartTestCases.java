@@ -33,7 +33,8 @@ public class ProductAddtoCartTestCases extends BaseClass {
 	}
 
 	@Test(priority = 2)
-	public void Verifythepriceofiphone() {
+	public void Verifythepriceofiphone() 
+	{
 		HomePageObjects hpo = new HomePageObjects(driver);
 
 		String pricea = hpo.iphonePrice().getText(); // Get the text using getText method
@@ -46,7 +47,8 @@ public class ProductAddtoCartTestCases extends BaseClass {
 	}
 
 	@Test(priority = 3)
-	public void Verifyiphoneaddtocart() {
+	public void Verifyiphoneaddtocart() 
+	{
 		HomePageObjects hpo = new HomePageObjects(driver);
 
 		hpo.iphoneAddToCartButton().click();
