@@ -8,10 +8,6 @@ import java.util.Date;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -20,21 +16,13 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 public class BaseClass {
 
 	public static WebDriver driver;
 	public Properties prop;
-	public int Row;
-	public String FirstName;
-	public String LastName;
-	public String Email;
-	public String Telephone;
-	public String Password;
-	public String CnfPassword;
-
+	
 	public void initializeDriver() throws IOException {
 
 		FileInputStream fis = new FileInputStream(
@@ -93,29 +81,6 @@ public class BaseClass {
 		    e.getMessage();
 		   }
 		   return destination;
-		  }
-
-	
-	
-	 
-	 
+		  }	 
 }	
 	
-	// Other Test cases to be add is as follows
-	// Verify all the links on Home Page -- Links in Information, Customer Service, Extras, My Account -- DONE
-	// Verify Currency drop down menu on Home Page -- DONE
-	// Verify the add to Cart Case 
-	// -- search iphone
-	// -- Capture the price of iphone and store it in a variable -- 
-    // iPhoneprice = $123.20 + Ex Tax: $101.00 = 224.20
-	// -- Click on Add to Cart
-	// -- Search Samsung
-	// -- Capture the price of Samsung Galaxy Tab and store it in a variable -- 
-    // SamsungPrice = $241.99 + Ex Tax: $199.99 = 441.98
-	// -- Click on Add to Cart
-	// -- Add the two product's captured price and store it in a variable -- TwoProduct
-	// -- Click on Cart -- 
-	// -- Capture the Total price from cart section and Store it in a variable -- 
-	// -- Compare the Total price in Cart and TwoProduct value -- 
-    // Verify the same product to be returned -- 
-	 

@@ -23,10 +23,10 @@ public class commonMethods {
 		sa.assertAll();
 	}	
 		
-	public static void PutExpliciteWaitsBy(WebDriver driver, int sec, By webElement)
+	public static void PutExpliciteWaitsBy(WebDriver driver, int sec, By By)
 	{		
 		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(sec));
-		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(webElement));		
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By));		
 	}
 	
 	public static void PutExpliciteWaitsWebElement(WebDriver driver, int sec, WebElement webElement)
