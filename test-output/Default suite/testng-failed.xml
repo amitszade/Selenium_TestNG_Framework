@@ -5,10 +5,10 @@
     <classes>
       <class name="testCases.ProductAddtoCartTestCases">
         <methods>
-          <include name="verifyTotalPriceinCart"/>
           <include name="endReport"/>
           <include name="ExtentReport"/>
           <include name="launchBrowser"/>
+          <include name="VerifySamsungTabaddtocart"/>
         </methods>
       </class> <!-- testCases.ProductAddtoCartTestCases -->
     </classes>

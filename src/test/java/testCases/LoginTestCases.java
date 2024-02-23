@@ -45,7 +45,7 @@ public class LoginTestCases extends BaseClass {
 	public void VerifyLoginWith_NonRegisteredData() throws InterruptedException, IOException {
 		HomePageObjects hpo = new HomePageObjects(driver);
 
-		commonMethods.PutExpliciteWaits(driver, 4, hpo.ClickonMyAccount());
+		commonMethods.PutExpliciteWaitsWebElement(driver, 4, hpo.ClickonMyAccount());
 
 		hpo.ClickonMyAccount().click();
 
@@ -69,7 +69,7 @@ public class LoginTestCases extends BaseClass {
 	public void VerifyLoginWithValidData() throws IOException {
 		LoginPageObjects lpo = new LoginPageObjects(driver);
 
-		commonMethods.PutExpliciteWaits(driver, 4, lpo.EnterEmailAddr());
+		commonMethods.PutExpliciteWaitsWebElement(driver, 4, lpo.EnterEmailAddr());
 
 		lpo.EnterEmailAddr().clear();
 		lpo.EnterEmailAddr().sendKeys(RegisterTestCases.randomEmail);

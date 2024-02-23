@@ -8,6 +8,10 @@ import java.util.Date;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +20,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 public class BaseClass {
@@ -89,36 +94,12 @@ public class BaseClass {
 		   }
 		   return destination;
 		  }
-	}
+
 	
-	/*
-	 * @BeforeMethod public void ExcelHandling() throws IOException {
-	 * FileInputStream fs = new
-	 * FileInputStream("C:\\Users\\Lenovo\\Desktop\\Workbook 2.xlsx"); XSSFWorkbook
-	 * workbook = new XSSFWorkbook(fs); XSSFSheet sheet = workbook.getSheetAt(0); //
-	 * int Lastrow = sheet.getLastRowNum();
-	 * 
-	 * for (int i = 1;i<=Lastrow;i++) { Row rw = sheet.getRow(i);
-	 * 
-	 * Cell cl = rw.getCell(1); FirstName = cl.toString();
-	 * System.out.println("Firstname is "+FirstName);
-	 * 
-	 * Cell cl1 = rw.getCell(2); LastName = cl1.toString();
-	 * System.out.println("LastName is "+LastName);
-	 * 
-	 * Cell cl2 = rw.getCell(2); Email = cl1.toString();
-	 * System.out.println("LastName is "+Email);
-	 * 
-	 * Cell cl3 = rw.getCell(3); Telephone = cl2.toString();
-	 * System.out.println("Telephone is "+Telephone);
-	 * 
-	 * Cell cl4 = rw.getCell(4); Password = cl3.toString();
-	 * System.out.println("Passworsd is "+Password);
-	 * 
-	 * Cell cl5 = rw.getCell(5); CnfPassword = cl4.toString();
-	 * System.out.println("ConfirmPassword is "+CnfPassword); }}
-	 */
 	
+	 
+	 
+}	
 	
 	// Other Test cases to be add is as follows
 	// Verify all the links on Home Page -- Links in Information, Customer Service, Extras, My Account -- DONE

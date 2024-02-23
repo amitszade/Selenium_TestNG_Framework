@@ -18,7 +18,7 @@ public class RegisterTestCases extends BaseClass {
 		
 		RegistrationPageObjects rpo = new RegistrationPageObjects(driver);
 
-		commonMethods.PutExpliciteWaits(driver,5, rpo.enterFirstName());
+		commonMethods.PutExpliciteWaitsWebElement(driver,5, rpo.enterFirstName());
 		
 		randomEmail = commonMethods.RandomEmailGenerator();
 		rpo.enterFirstName().clear();
@@ -57,7 +57,7 @@ public class RegisterTestCases extends BaseClass {
 				
 		RegistrationPageObjects rpo = new RegistrationPageObjects(driver);
         
-		commonMethods.PutExpliciteWaits(driver,5, rpo.enterFirstName());
+		commonMethods.PutExpliciteWaitsWebElement(driver,5, rpo.enterFirstName());
 		
 		rpo.enterFirstName().clear();
 		rpo.enterFirstName().sendKeys(constants.EmailAddr2);
@@ -92,7 +92,7 @@ public class RegisterTestCases extends BaseClass {
 		
         HomePageObjects hpo = new HomePageObjects(driver);
         
-        commonMethods.PutExpliciteWaits(driver,5, hpo.ClickonMyAccount());
+        commonMethods.PutExpliciteWaitsWebElement(driver,5, hpo.ClickonMyAccount());
 
 		hpo.ClickonMyAccount().click();
 

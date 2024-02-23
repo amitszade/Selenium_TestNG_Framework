@@ -1,7 +1,5 @@
 package testCases;
 
-import java.time.Duration;
-
 import org.testng.annotations.Test;
 
 import com.Resources.BaseClass;
@@ -53,7 +51,8 @@ public class ProductAddtoCartTestCases extends BaseClass {
 
 		hpo.iphoneAddToCartButton().click();
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		commonMethods.PutExpliciteWaitsBy(driver, 5, hpo.iphoneAddedInCartSuccessful1());
+		
 		commonMethods.handleAssertion(hpo.iphoneAddedInCartSuccessful().getText(), constants.iphoneAddedIntoCart);
 	}
 
@@ -88,6 +87,8 @@ public class ProductAddtoCartTestCases extends BaseClass {
 
 		hpo.SamsungAddToCartButton().click();
 		
+		commonMethods.PutExpliciteWaitsBy(driver, 5, hpo.SamsungAddedIntoCartSucceed1());
+				
 		commonMethods.handleAssertion(hpo.SamsungAddedIntoCartSucceed().getText(), constants.SamsungAddedIntoCart);
 	}
 

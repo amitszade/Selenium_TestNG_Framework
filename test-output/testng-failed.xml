@@ -8,29 +8,12 @@
     <classes>
       <class name="testCases.ProductAddtoCartTestCases">
         <methods>
-          <include name="Verifysearchtheiphone"/>
           <include name="endReport"/>
           <include name="ExtentReport"/>
           <include name="launchBrowser"/>
           <include name="VerifySamsungTabaddtocart"/>
-          <include name="Verifythepriceofiphone"/>
-          <include name="Verifyiphoneaddtocart"/>
-          <include name="VerifyTotalPriceinCart"/>
-          <include name="VerifysearchtheSamsung"/>
-          <include name="VerfiyProductPlaceholderofSerachbox"/>
-          <include name="VerifythepriceofSamsungTab"/>
         </methods>
       </class> <!-- testCases.ProductAddtoCartTestCases -->
-      <class name="testCases.CurrencyMenuTestCases">
-        <methods>
-          <include name="VerifyUSDollerOptionCurrencyDropDownMenu"/>
-          <include name="VerifyEuroOptionCurrencyDropDownMenu"/>
-          <include name="endReport"/>
-          <include name="ExtentReport"/>
-          <include name="launchBrowser"/>
-          <include name="VerifyPoundSterlingOptionCurrencyDropDownMenu"/>
-        </methods>
-      </class> <!-- testCases.CurrencyMenuTestCases -->
       <class name="testCases.RegisterTestCases">
         <methods>
           <include name="VerifyRegistrationWithInvalidData"/>
@@ -52,14 +35,6 @@
           <include name="VerifyLoginWith_NonRegisteredData"/>
         </methods>
       </class> <!-- testCases.LoginTestCases -->
-      <class name="testCases.HomePageLinksTestCases">
-        <methods>
-          <include name="VerifyAlltheLinksonHomePage"/>
-          <include name="endReport"/>
-          <include name="ExtentReport"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- testCases.HomePageLinksTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
