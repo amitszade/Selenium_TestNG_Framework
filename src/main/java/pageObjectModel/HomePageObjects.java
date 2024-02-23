@@ -111,7 +111,7 @@ public class HomePageObjects {
 	{
 		return (iphoneAddedInCartSucceed);
 	}
-		
+	
 	public WebElement SamsungPrice()
 	{
 		return driver.findElement(SamsungPrice);
@@ -135,6 +135,5 @@ public class HomePageObjects {
 	public WebElement TotalPriceInCart()
 	{
 		return driver.findElement(TotalPriceInCart);
-	}
-	
+	}	
 }
