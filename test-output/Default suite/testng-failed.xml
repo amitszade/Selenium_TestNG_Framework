@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.ProductAddtoCartTestCases">
+      <class name="testCases.CurrencyMenuTestCases">
         <methods>
+          <include name="VerifyUSDollerOptionCurrencyDropDownMenu"/>
           <include name="endReport"/>
           <include name="ExtentReport"/>
           <include name="launchBrowser"/>
-          <include name="VerifySamsungTabaddtocart"/>
+          <include name="VerifyPoundSterlingOptionCurrencyDropDownMenu"/>
         </methods>
-      </class> <!-- testCases.ProductAddtoCartTestCases -->
+      </class> <!-- testCases.CurrencyMenuTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

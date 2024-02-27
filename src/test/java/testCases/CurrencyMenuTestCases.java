@@ -10,7 +10,7 @@ import pageObjectModel.HomePageObjects;
 
 
 public class CurrencyMenuTestCases extends BaseClass{
-	
+		
 	@Test (priority=0)
 	public void VerifyEuroOptionCurrencyDropDownMenu()
 	{

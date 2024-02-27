@@ -102,6 +102,6 @@ public class ProductAddtoCartTestCases extends BaseClass {
         
         hpo.CartButton().click();
         
-        commonMethods.handleAssertion(TotalCartValue, constants.TotalCartValue);        
+        commonMethods.handleAssertion(TotalCartValue, constants.TotalCartValue);       
 	}
 }

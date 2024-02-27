@@ -26,7 +26,7 @@ public class LoginTestCases extends BaseClass {
 
 		lpo.ClickOnLoginButton().click();
 		
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		
 		 try 
 		 { 			
@@ -38,7 +38,6 @@ public class LoginTestCases extends BaseClass {
 		    commonMethods.handleAssertion(lpo.LoginAttemptsExcceds().getText(),constants.LoginAttemptExceedsErrMsg);
 		 }
 		 
-		
 	}
 		 
 	@Test(priority = 0)
@@ -60,9 +59,7 @@ public class LoginTestCases extends BaseClass {
 		lpo.ClickOnLoginButton().click();
 
 		commonMethods.handleAssertion(driver.getCurrentUrl(), constants.Non_RegisteredEmailUrl);
-		Thread.sleep(4000);
-		
-		
+			
 	}
 
 	@Test(priority = 2)
@@ -81,8 +78,5 @@ public class LoginTestCases extends BaseClass {
 
 		commonMethods.handleAssertion(driver.getCurrentUrl(), constants.LoginSuccessUrl);
 		
-
-		// System.out.println("Login Successful Messsage:
-		// "+lpo.LoginSucceessMessage().getText());
 	}
 }
